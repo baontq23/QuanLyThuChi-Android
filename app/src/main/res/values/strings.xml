@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PH23876_Assignment</string>
+    <string name="navigation_close">Close</string>
+    <string name="navigation_open">Open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_exit">Thoát</string>
+    <string name="navigation_info">Thông tin</string>
+    <string name="navigation_statistic">Thống kê</string>
+</resources>

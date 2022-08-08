@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_khoanthu"
+            android:icon="@drawable/ic_outline_trending_down_24"
+            android:title="Khoản thu" />
+        <item
+            android:id="@+id/menu_item_khoanchi"
+            android:icon="@drawable/ic_outline_trending_up_24"
+            android:title="Khoản chi" />
+        <item
+            android:id="@+id/menu_item_thongke"
+            android:checked="true"
+            android:icon="@drawable/ic_outline_science_24"
+            android:title="@string/navigation_statistic" />
+        <item
+            android:id="@+id/subtitle"
+            android:title="@string/navigation_info">
+            <menu>
+                <item
+                    android:id="@+id/menu_item_about"
+                    android:icon="@drawable/outline_info_black_24dp"
+                    android:title="@string/navigation_info" />
+                <item
+                    android:id="@+id/menu_item_exit"
+                    android:icon="@drawable/outline_logout_black_24dp"
+                    android:title="@string/navigation_exit" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

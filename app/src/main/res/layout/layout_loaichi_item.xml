@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#F0EFFF"
+        android:outlineAmbientShadowColor="#F0EFFF"
+        android:outlineSpotShadowColor="#F0EFFF"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_up_arrow_red" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_loaichi_item_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="14"
+        android:fontFamily="@font/source_sans_pro_black"
+        android:gravity="center_vertical"
+        android:text="Loai chi"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_loaichi_item_edit"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="#F0EFFF"
+        android:drawableTop="@drawable/ic_outline_edit_24"
+        android:drawableTint="@color/purple_500"
+        android:outlineAmbientShadowColor="#F0EFFF"
+        android:outlineSpotShadowColor="#F0EFFF"
+        app:cornerRadius="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_loaichi_item_delete"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:backgroundTint="#F0EFFF"
+        android:drawableTop="@drawable/ic_outline_delete_24"
+        android:drawableTint="@android:color/holo_red_light"
+        android:outlineAmbientShadowColor="#F0EFFF"
+        android:outlineSpotShadowColor="#F0EFFF"
+        app:cornerRadius="50dp" />
+</LinearLayout>

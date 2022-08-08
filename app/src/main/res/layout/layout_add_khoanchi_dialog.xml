@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_add_khoanchi_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thêm khoản chi"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_khoanchi_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperTextTextColor="@android:color/holo_red_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dialog_add_khoanchi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Khoản chi"
+            android:lines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_khoanchi_cost"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperTextTextColor="@android:color/holo_red_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dialog_add_khoanchi_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:lines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="Loại chi" />
+
+    <Spinner
+        android:id="@+id/sn_loaichi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_date_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:drawableLeft="@drawable/ic_outline_date_range_24"
+            android:text="Chọn ngày"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_add_khoanchi_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/material_on_surface_disabled"
+            android:text="Quay lại"
+            android:textColor="@color/white"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog_add_khoanchi_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+</LinearLayout>
