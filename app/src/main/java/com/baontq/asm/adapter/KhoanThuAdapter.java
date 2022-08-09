@@ -199,8 +199,12 @@ public class KhoanThuAdapter extends RecyclerView.Adapter<KhoanThuAdapter.KhoanT
                     myCalendar.set(Calendar.YEAR, year);
                     myCalendar.set(Calendar.MONTH, monthOfYear);
                     myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                    tvDateChoose.setText(dayOfMonth + "/" + monthOfYear + "/" + year);
+                    tvDateChoose.setText(dayOfMonth + "/" + String.valueOf(monthOfYear + 1) + "/" + year);
                     kt.setTime(dayOfMonth + "/" + monthOfYear + "/" + year);
+                    Date selectedDate = myCalendar.getTime();
+                    SimpleDateFormat dateFormatter = new SimpleDateFormat(
+                            "yyyy-MM-dd");
+                    kt.setTime(dateFormatter.format(selectedDate));
                 }
             };
             DatePickerDialog datePickerDialog = new DatePickerDialog(context, date, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH), myCalendar.get(Calendar.DAY_OF_MONTH));
